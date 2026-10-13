@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="stylebackup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
+    </head>
+    <body>
+        
+<section class="nav-bar">
+
+    
+    <a href="#home" class="logo" aria-label="STRIDE Home">
+        <span class="head-logo"></span>
+        <span class="logo-text">STRIDE</span>
+    </a>
+
+    <!-- Login and Sign Up Buttons -->
+    <div class="nav-buttons">
+        <button type="button" id="lo">Login</button>
+        <button type="button" id="signup">Sign UP</button>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navContainer"
+    >
+        ☰
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="nav-container" id="navContainer">
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+</section>
+
+
+        <section id="home">
+        <section class="Banner">
+            <div class="s-banner">New Drop -- Aero Series</div>
+            <div class="banner-text"><h1>Move Beyond </h1>
+                                     <h1>Limits</h1>
+                                     <p>Engineered for those who refuse to stand still. Feather-<br>
+                                      light cushioning, razor-sharp grip, and a fit that feels <br>
+                                      custom-molded to your stride.</p>
+            <div class="banner-btn">
+                <button>Shop Now</button>
+                <button>Explore</button>
+            </div>
+            </div>
+
+            <div class="banner-r">
+                <div><h2>123K+</h2><p>ATHELETS</p></div><div><h2>4.9</h2><p>AVR RATING</p></div><div><h2>38</h2><p>COUNTRIES</p></div>
+            </div>
+            <div id="ban-img"><img src="img2.jpeg"></div>
+        </section> 
+        </section>
+        <div class="container"><h6>WHY STRIDE</h6><h2>Built different, felt instantly</h2><p>Every detail obsessively engineered so your first step feels like your thousandth.
+
+</p></div>
+
+
+
+<section id="collection">
+    <div class="cards">
+
+        <div class="card"><i id="icon1" class="fa-solid fa-bolt"></i><h3>Feather Light</h3><p>Aerospace-grade foam midsole shaves 40% off traditional weight without losing a gram of rebound.</p></div>
+        <div class="card"><i id="icon2" class="fa-regular fa-circle-dot"></i><h3>Adaptive Grip</h3><p>Multi-directional lugs read the surface 200 times per second, locking in on wet, dry, and everything between.</p></div>
+        <div class="card"><i id="icon3" class="fa-solid fa-location-dot"></i><h3>Climate Cool</h3><p>A 3-zone mesh chimney vents heat from forefoot to collar, keeping your foot 6° cooler on long runs.</p></div>
+        <div class="card"><i id="icon4" class="fa-solid fa-arrow-rotate-right"></i><h3>Eco Forged</h3><p>72% recycled ocean plastic in the upper and a carbon-neutral sole. Performance that treads lighter.
+
+</p>
+    </div></div>
+</section>
+
+<section id="about">
+    <div class="a-left"><img src="img.png"><div class="b-img"><h2>15</h2><p>Years of innovation</p></div> </div>
+    <div class="a-right"><h4>OUR STORY</h4><h3>From a garage sketch to a global stride</h3><p>STRIDE began in 2011 when two runners, frustrated by shoes that looked fast but felt like bricks, decided to build their own. What started as hand-cut prototypes tested on dawn laps around the block has become footwear trusted by marathon winners, trail rebels, and everyday movers in 38 countries.</p><br><p>We don't chase trends. We chase the feeling of a perfect run — that effortless, floating moment where shoe and foot become one. Every STRIDE is engineered to deliver that feeling, step after step.</p>
+   <div class="a-r"> <h5>Hand-tested by 200+ pro athletes</h5>
+    <h5>Carbon-neutral manufacturing</h5>
+    <h5>90-day run-it-or-return-it guarantee</h5>
+    </div>
+    <button  class="roj">Read Our Journey</button>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="stride"><div id="r-dh"><div class="r-div"></div><h2>STRIDE</h2></div><p>Footwear for the relentless. Built to move, designed to last.</p>
+    <div class="icons-f"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-twitter"></i></div>
+</div>
+    <div class="shop"><h2>Shop</h2><a href="">Running</a><br><a href="">Lifestyle</a><br><a href="">Trail</a><br><a href="">Kids</a></div>
+    <div class="company"><h2>Company</h2><a href="">About us</a><br><a href="">Careers</a><br><a href="">Sustainability</a><br><a href="">Press</a></div>
+    <div class="support"><h2>Support</h2><a href="">Size Guide</a><br><a href="">Return</a><br><a href="">Shipping</a><br><a href="">Contact</a></div>
+</section>
+
+<section id="footer">
+    <hr>
+  <p>&copy; 2026 STRIDE Athletics. All rights reserved.</p>
+    <div class="ptc"><p>Privacy Policy</p><p>Terms of Services</p><p>Cookie Policy</p></div>
+</section>
+<script>
+    
+const menuToggle = document.getElementById("menuToggle");
+const navContainer = document.getElementById("navContainer");
+
+menuToggle.addEventListener("click", function () {
+    const isOpen = navContainer.classList.toggle("active");
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+});
+
+// Link click karne par mobile menu band ho jayega
+navContainer.querySelectorAll("nav a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navContainer.classList.remove("active");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+    });
+});
+</script>
+
+
+    </body>
+</html>
